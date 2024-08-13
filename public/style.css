@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    height: 100vh;
+    
+    background-color: rgb(49, 49, 49);
+}
+
+h1 {
+    color: white;
+}
+
+.board-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.board {
+    width: 150px;
+    height: 150px;
+    background-image: url("./images/board.svg");
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    position: relative;
+
+    background-color: transparent;
+    border: none;
+}
+
+.cell > img {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    display: none;
+}
+
